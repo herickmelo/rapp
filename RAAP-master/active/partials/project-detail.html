@@ -1,0 +1,54 @@
+<div ng-repeat = "project in projects">
+<div ng-if = "project.ProjectID == ProjectID">
+  <img ng-src="{{project.Picture}}" class="project">
+
+<h1>{{project.Title}}</h1>
+
+<h4>{{project.Professors}}</h4>
+  
+<h5> {{project.Status}} </h5>
+
+<br>
+
+<p>{{project.Description}}</p>
+
+<!--<ul class="project-thumbs">
+  <li ng-repeat="img in phone.images">
+    <img ng-src="{{img}}">
+  </li>
+</ul>-->
+
+<ul class="specs">
+  <li>
+    <span>Pre-requisites</span>
+    <dl>
+      <dd>{{project.Prereq}}</dd>
+    </dl>
+  </li>
+
+  <li>
+    <span>Contact Info</span>
+    <dl>
+      <dd>{{project.Contact}}</dd>
+    </dl>
+  </li>
+
+  <li>
+    <span>Last Updated</span>
+    <dl>
+      <dd>{{project.LastUpdated}}</dd>
+    </dl>
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Website</span>
+    <dl>
+      <dd>{{project.Link}}</dd>
+    </dl>
+  </li>
+</ul>
+
+</div>
+</div>
