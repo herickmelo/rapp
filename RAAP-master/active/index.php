@@ -2,7 +2,7 @@
 <html lang="en" ng-app="RAPPApp">
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>Search Output</title>
+	<title>Active Projects</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
