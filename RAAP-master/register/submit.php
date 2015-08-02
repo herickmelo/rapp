@@ -8,7 +8,6 @@
   <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
-
 </head>
 <body>
 
@@ -43,17 +42,18 @@ $sql = "INSERT into project (Title, Description, Professors, Link, Prereq, Conta
 values ('".$Title."','".$Description."','".$Professors."','".$Link."','".$Prereq."','".$Contact."','".$Status."','".$Picture."',".$LastUpdated.",'".$YourPass."')";
 $stmt = $dbh->prepare( $sql );
 
-        // execute the query
+/* execute the query */
 $stmt->execute();
 If($stmt)
 {
-Echo "Record successfully inserted <br>
-Your Password: $YourPass
+Echo "<br><h3>Record successfully inserted <br><br>
+Your Password: $YourPass <br><b>
+Please make sure to record your password!</b></h3>
 ";
 }
 Else
 {
-	Echo "There was an error running the query.";
+	Echo "<br><h3>There was an error running the query.</h3>";
 }
 ?>
 

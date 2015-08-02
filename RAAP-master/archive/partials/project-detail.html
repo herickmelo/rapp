@@ -1,7 +1,40 @@
+  <script>
+    function cancel() {
+          document.getElementById("popup").style.display = "none";      
+          document.getElementById("pass").value = "";
+    };
+
+    function showPopup() {
+         document.getElementById("popup").style.display = "block";
+         document.getElementById("pass").focus();
+    };
+  </script>
+
+  <style type="text/css">
+    #popup {
+        border-style: solid;
+        border-width: 1px;
+        width:230px;
+        height:100px;
+        padding:20px;
+        background-color:lightgray;    
+        position:fixed;
+        top:100px;
+        left:600px;
+        display:none;
+    }
+  </style>
 <div ng-repeat = "project in projects">
 <div ng-if = "project.ProjectID == ProjectID">
   <img ng-src="{{project.Picture}}" class="project">
-
+ <div id="popup" ng-controller="RAPPController">
+    <div>Enter Password:</div>
+    <input id="pass" type="password"/>
+    <button ng-click="done(project.Password, project.ProjectID)">Done</button>   
+    <button onclick="cancel()">Cancel</button> 
+  </div>
+<h3><a style="float: right; padding-right: 10px;" onclick="showPopup()">[Edit]</a>
+</h3>
 <h1>{{project.Title}}</h1>
 
 <h4>{{project.Professors}}</h4>

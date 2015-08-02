@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta content = "text/htm; charset=utf-8" http-equiv="Conent-Type" />
+    <meta content = "text/htm; charset=utf-8" http-equiv="Content-Type" />
     <title>Register</title>
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -15,10 +15,14 @@
       }
     </style>
 </head>
+
 <body id="register" background="css/bck.png">
 <?php include '../includes/header.php';
 ?>
 
+<script src="js/myscript.js"></script>
+
+<!-- Checking for a luc.edu email -->
 <script type="text/javascript">
 
   function checkForm(form)
@@ -34,6 +38,12 @@
   }
 </script>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
 
 <form class="form-horizontal" method="post" action="submit.php" onsubmit="return checkForm(this);">
 <fieldset>
@@ -41,7 +51,7 @@
 <!-- Form Name -->
 <legend align="center" style="font-size:100%;font-weight:bold;">Register your Project</legend>
 
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="Title">Title</label>  
   <div class="col-md-4">
@@ -57,7 +67,7 @@
   </div>
 </div>
 
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="Professors">Researcher</label>  
   <div class="col-md-4">
@@ -65,8 +75,7 @@
   </div>
 </div>
 
-
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="Email">Email</label>  
   <div class="col-md-4">
@@ -75,16 +84,15 @@
   <img src="help.png" height="20" width="20" data-toggle="tooltip" data-placement="right" style="vertical-align:baseline;" title="Make sure that the Email provided is 'luc.edu'."></img>
 </div>
 
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="External">External Link</label>  
   <div class="col-md-4">
-  <input id="Link" name="Link" type="text" class="form-control input-md">
-    
+  <input id="Link" name="Link" type="text" class="form-control input-md" placeholder="If your project has an external website, enter the link here">
   </div>
 </div>
 
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="txtPrereqs">Prerequisites</label>  
   <div class="col-md-4">
@@ -93,7 +101,7 @@
     <img src="help.png" height="20" width="20" style="vertical-align:baseline;" data-toggle="tooltip" data-placement="right" title="Define prerequisites for that project."></img>
 </div>
 
-<!-- Text input-->
+<!-- Text input -->
 <div class="form-group">
   <label class="col-md-4 control-label page_label" for="txtPicture">URL of Picture</label>  
     <div class="col-md-4">
@@ -113,9 +121,9 @@
       <option value="Active: Not Seeking Students">Active: Not Seeking Students</option>
       <option value="Archived: Seeking Students">Archived: Seeking Students</option>
       <option value="Archived: Finished">Archived: Finished</option>
- 
     </select>
   </div>
+  <img src="help.png" height="20" width="20" data-toggle="tooltip" style="vertical-align:baseline;" data-placement="right" title="Active projects are currently in progress and may be seeking student or not. Archived projects are projects that are finished or seeking continuity."></img>
 </div>
 
 <!-- Button -->
@@ -128,12 +136,7 @@
 
 </fieldset>
 </form>
-<script src="js/myscript.js"></script>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
+
 </body>
 </html>
 

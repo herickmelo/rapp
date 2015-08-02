@@ -31,3 +31,20 @@ RAPPControllers.controller('ProjectEditCtrl', ['$scope', '$routeParams', '$http'
     });
     $scope.ProjectID = $routeParams.ProjectID;
   }]);
+
+RAPPControllers.controller('RAPPController', ['$scope', function($scope) {
+    $scope.done = function(p, id) {
+          document.getElementById("popup").style.display = "none";
+          var password = document.getElementById("pass").value;
+          document.getElementById("pass").value = "";
+          if (password == p)
+           {
+             window.location.replace("#/edit/" + id);
+           }
+           else
+           {
+            alert("Password does not match.");
+           };
+          
+    };
+}]);

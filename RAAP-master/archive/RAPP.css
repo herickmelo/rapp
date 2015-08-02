@@ -43,7 +43,7 @@
   float: left;
 }
 
-/** Detail View **/
+/* Detail View */
 img.project {
   float: left;
   margin-right: 3em;
@@ -63,19 +63,6 @@ ul.phone-thumbs {
   margin: 0;
   list-style: none;
 }
-
-/*ul.phone-thumbs li {
-  border: 1px solid black;
-  display: inline-block;
-  margin: 1em;
-  background-color: white;
-}
-
-ul.phone-thumbs img {
-  height: 100px;
-  width: 100px;
-  padding: 1em;
-}*/
 
 ul.specs {
   margin: 0;

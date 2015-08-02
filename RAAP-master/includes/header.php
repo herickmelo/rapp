@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="/../RAAP-master/active/#/projects">Active Projects</a>
                 </li>
-                <li><a href="/../RAAP-master/archive/#/projects">Archive Projects</a>
+                <li><a href="/../RAAP-master/archive/#/projects">Archived Projects</a>
                 </li>
                 <li><a href="/../RAAP-master/tutorial/">Help and Tutorial</a>
                 </li>

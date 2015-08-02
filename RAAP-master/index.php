@@ -13,6 +13,7 @@ body, h1, p {
   font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   margin: 0;
+  margin-bottom: 60px; /* footer height */
   padding: 0;
   text-align: center;
  
@@ -68,6 +69,15 @@ a:hover {
 .btn {
     margin: 10px;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
 	</style>
 </head>
 
@@ -103,9 +113,12 @@ echo('<div style="margin-top:0px" style = "padding-bottom:100px"></div>');
 </div>
 <script>document.getElementById("demo").innerHTML = echo $_POST["nextstep"]</script>
 <script src="js/myscript.js"></script>
-
-
-
-
+<footer class="footer">
+    <p>
+      LOYOLA UNIVERSITY CHICAGO <br/>
+      © Copyright 2015 <br/>
+      Developed by Ana Beatrice Severo, Jose Herick Melo da Silva, Wanderson Modesto da Silva
+    </p>
+</footer>
 </body>
 </html>

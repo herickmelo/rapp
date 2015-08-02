@@ -1,7 +1,7 @@
 <?php
 
         // connect to the database
-        $dbh = new PDO('mysql:host=localhost:8080;dbname=RAPP', "root", "sql4fun");
+        $dbh = new PDO('mysql:host=localhost;dbname=RAPP', "root", "sql4fun");
 
         // a query get all the records from the users table
         $sql = "SELECT * FROM project WHERE Status = 'Active: Seeking Students' OR Status = 'Active: Not Seeking Students'";
